@@ -1,0 +1,43 @@
+.advert {
+    padding: 40px 168px 40px 40px;
+    background-color: #f0edea;
+    width: 400px;
+    a {
+        cursor: pointer;
+    }
+    &__hotel {
+        margin-bottom: 6px;
+        display: inline-block;
+    }
+    &__place {
+        opacity: 0.5;
+    }
+    &__subblock {
+        margin-top: 20px;
+    }
+    &__event_wrapper {
+        display: flex;
+        align-items: center;
+    }
+    &__vertical_line {
+        background: #000000;
+        opacity: 0.2;
+        width: 1px;
+        height: 14px;
+        margin: 0 14px;
+    }
+    &__evant_date,
+    &__evant_type {
+        opacity: 0.48;
+    }
+}
+.socials {
+    display: flex;
+    margin-top: 40px;
+    padding-left: 40px;
+    opacity: 0.5;
+    &__icon {
+        margin-left: 16px;
+        cursor: pointer;
+    }
+}

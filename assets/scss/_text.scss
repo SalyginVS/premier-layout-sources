@@ -1,0 +1,203 @@
+h1,
+.h_one {
+    font-family: CormorantMedium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 108px;
+    line-height: 86%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #000000;
+    @include max(lg) {
+        font-size: 80px;
+    }
+    @include max(md) {
+        font-size: 64px;
+    }
+    @include max(sm) {
+        font-size: 48px;
+    }
+    @include max(xs) {
+        font-size: 40px;
+    }
+}
+h2,
+.h_two {
+    font-family: CormorantMedium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 88px;
+    line-height: 96%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-feature-settings: "liga" off;
+    color: #000000;
+    @include max(lg) {
+        font-size: 64px;
+        line-height: 86%;
+    }
+    @include max(md) {
+        font-size: 56px;
+    }
+    @include max(sm) {
+        font-size: 36px;
+    }
+}
+h3,
+.h_three {
+    font-family: CormorantRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 66px;
+    line-height: 100%;
+    color: #000000;
+    text-transform: none;
+    @include max(lg) {
+        font-size: 40px;
+    }
+    @include max(md) {
+        font-size: 32px;
+        line-height: 110%;
+    }
+}
+h4,
+.h4 {
+    font-family: CormorantRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 120%;
+    color: #000000;
+    @include max(lg) {
+        font-size: 36px;
+    }
+    @include max(md) {
+        font-size: 28px;
+    }
+    @include max(sm) {
+        font-size: 26px;
+    }
+}
+
+h5, .h5 {
+    font-family: CormorantRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 130%;
+    color: #000000;
+    @include max(lg) {
+        font-size: 28px;
+    }
+    @include max(md) {
+        font-size: 24px;
+        line-height: 112%;
+    }
+}
+h6,
+.h6 {
+    font-family: AvenirNextCyrMedium;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 24px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    color: #000000;
+    &.font-cormorant {
+        font-family: CormorantRegular;
+    }
+    @include max(lg) {
+        font-size: 18px;
+    }
+}
+.a1,
+.little_title,
+.second_button {
+    font-family: AvenirNextCyrRegular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 140%;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: #000000;
+    @include max(lg) {
+        font-size: 9px;
+    }
+}
+
+.little_title {
+    opacity: 0.3;
+}
+.a2 {
+    font-family: AvenirNextCyrMedium;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 10px;
+    line-height: 100%;
+    // letter-spacing: 1em;
+    color: #000000;
+    &.title {
+        letter-spacing: 0.24em;
+        font-weight: 500;
+    }
+}
+
+.p1 {
+    font-family: AvenirNextCyrLight;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 196%;
+    letter-spacing: 0.04em;
+    color: #000000;
+    @include max(lg) {
+        font-size: 12px;
+        line-height: 180%;
+    }
+}
+
+// .p2 {
+//     font-family: AvenirNextCyrMedium;
+//     font-style: normal;
+//     font-weight: 450;
+//     font-size: 8px;
+//     line-height: 14px;
+//     letter-spacing: 0.24em;
+//     text-transform: uppercase;
+//     color: #000000;
+// }
+
+.p2_light {
+    font-family: 'AvenirNextCyrLight';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 180%;
+    letter-spacing: 0.06em;
+    color: #000000;
+}
+
+.p3 {
+    font-family: AvenirNextCyrMedium;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 8px;
+    line-height: 178%;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+a {
+    font-style: none;
+    text-decoration: none;
+}
+.searchFont {
+    font-family: CormorantRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 110%;
+    color: #000000;
+}

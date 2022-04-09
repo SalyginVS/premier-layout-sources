@@ -1,0 +1,87 @@
+@font-face {
+  font-family: CormorantMedium;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../../static/fonts/Cormorant/Cormorant-Medium.ttf") format("ttf"),
+    url("../../static/fonts/Cormorant/Cormorant-Medium.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: CormorantRegular;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../../static/fonts/Cormorant/Cormorant-Regular.ttf") format("ttf"),
+    url("../../static/fonts/Cormorant/Cormorant-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: CormorantRegularItalic;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../../static/fonts/Cormorant/Cormorant-RegularItalic.ttf")
+      format("ttf"),
+    url("../../static/fonts/Cormorant/Cormorant-RegularItalic.woff")
+      format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: AvenirNextCyrMedium;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../../static/fonts/AvenirNextCyr/AvenirNextCyr-Medium.ttf")
+      format("ttf"),
+    url("../../static/fonts/AvenirNextCyr/AvenirNextCyr-Medium.woff")
+      format("woff"),
+    url("../../static/fonts/AvenirNextCyr/AvenirNextCyr-Medium.eot")
+      format("eot");
+  font-display: swap;
+}
+
+// @font-face {
+//   font-family: AvenirNextCyr;
+//   font-style: normal;
+//   font-weight: 500;
+//   src: url("../../static/fonts/AvenirNextCyr/AvenirNextCyr-Demi.ttf") format("ttf"),
+//     url("../../static/fonts/AvenirNextCyr/AvenirNextCyr-Demi.woff") format("woff"),
+//     url("../../static/fonts/AvenirNextCyr/AvenirNextCyr-Demi.eot") format("eot");
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: AvenirNextCyr;
+//   font-style: normal;
+//   font-weight: 500;
+//   src: url("../../static/fonts/AvenirNextCyr/AvenirNextCyr-Regular.ttf") format("ttf"),
+//     url("../../static/fonts/AvenirNextCyr/AvenirNextCyr-Demi.woff") format("woff"),
+//     url("../../static/fonts/AvenirNextCyr/AvenirNextCyr-Demi.eot") format("eot");
+//   font-display: swap;
+// }
+
+@font-face {
+  font-family: AvenirNextCyrRegular;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../../static/fonts/AvenirNextCyr/AvenirNextCyr-Regular.ttf")
+      format("ttf"),
+    url("../../static/fonts/AvenirNextCyr/AvenirNextCyr-Regular.woff")
+      format("woff"),
+    url("../../static/fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot")
+      format("eot");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: AvenirNextCyrLight;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../../static/fonts/AvenirNextCyr/AvenirNextCyr-Light.ttf")
+      format("ttf"),
+    url("../../static/fonts/AvenirNextCyr/AvenirNextCyr-Light.woff")
+      format("woff"),
+    url("../../static/fonts/AvenirNextCyr/AvenirNextCyr-Light.eot")
+      format("eot");
+  font-display: swap;
+}

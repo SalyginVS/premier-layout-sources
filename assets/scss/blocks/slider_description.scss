@@ -1,0 +1,42 @@
+@import '../utils';
+
+.slider_description {
+  width: 100%;
+  display: grid;
+  margin-bottom: 104px;
+  padding: 0 56px;
+  grid-template-columns: 200px 1fr 200px;
+  @include max(md) {
+    padding: 0 50px;
+  }
+
+  .filters {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start !important;
+
+    p {
+      // margin-right: 72px;
+      cursor: pointer;
+    }
+    p:last-of-type {
+      margin-right: 0px;
+    }
+  }
+  h3 {
+    text-align: center;
+  }
+
+  .filters,
+  .go_to_button_wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .go_to_button_wrapper {
+    p {
+      cursor: pointer;
+    }
+  }
+}

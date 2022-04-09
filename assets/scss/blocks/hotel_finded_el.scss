@@ -1,0 +1,16 @@
+@import "../utils";
+
+.hotel_finded_el {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    min-height: 533px;
+    background-color: #f0edea;
+    margin-bottom: 24px;
+    @include max(lg) {
+        min-height: fit-content;
+    }
+    @include max(sm) {
+        margin-bottom: 18px;
+    }
+}

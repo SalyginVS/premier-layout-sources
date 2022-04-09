@@ -1,0 +1,204 @@
+// < adaptive
+// $breakpoints: (xs: 375, sm: 414, md: 768, lg: 1024);
+$breakpoints: (
+  xs: 400,
+  sm: 650,
+  md: 900,
+  lg: 1250,
+  xl:1920,
+);
+
+@mixin max($size) {
+  @if map-has-key($breakpoints, $size) {
+    @media (max-width: #{map-get($breakpoints, $size)}px) {
+      @content;
+    }
+  } @else {
+    @media (max-width: #{$size}px) {
+      @content;
+    }
+  }
+}
+
+@mixin min($size) {
+  @if map-has-key($breakpoints, $size) {
+    @media (min-width: #{map-get($breakpoints, $size)}px) {
+      @content;
+    }
+  } @else {
+    @media (min-width: #{$size}px) {
+      @content;
+    }
+  }
+}
+
+// indents
+@mixin mb-16 {
+  margin-bottom: 16px;
+}
+
+@mixin mb-22 {
+  margin-bottom: 22px;
+  @include max(lg) {
+    margin-bottom: 20px;
+  }
+}
+
+@mixin mb-24 {
+  margin-bottom: 24px;
+  @include max(lg) {
+    margin-bottom: 16px;
+  }
+  @include max(md) {
+    margin-bottom: 12px;
+  }
+  @include max(sm) {
+    margin-bottom: 10px;
+  }
+}
+
+@mixin ml-40 {
+  margin-left: 40px;
+}
+
+@mixin mr-40 {
+  margin-right: 40px;
+  @include max(lg) {
+    margin-right: 32px;
+  }
+  @include max(md) {
+    margin-right: 24px;
+  }
+}
+
+@mixin mb-40 {
+  margin-bottom: 40px;
+  @include max(lg) {
+    margin-bottom: 32px;
+  }
+  @include max(md) {
+    margin-bottom: 24px;
+  }
+}
+
+@mixin mb-48 {
+  margin-bottom: 48px;
+  @include max(lg) {
+    margin-bottom: 40px;
+  }
+  @include max(md) {
+    margin-bottom: 32px;
+  }
+  @include max(sm) {
+    margin-bottom: 20px;
+  }
+}
+
+@mixin mt-64 {
+  margin-top: 64px;
+  @include max(lg) {
+    margin-top: 40px;
+  }
+  @include max(md) {
+    margin-top: 32px;
+  }
+}
+@mixin ml-64 {
+  margin-left: 64px;
+}
+
+@mixin mt-80 {
+  margin-top: 80px;
+  @include max(lg) {
+    margin-top: 64px;
+  }
+}
+
+@mixin mb-80 {
+  margin-bottom: 80px;
+  @include max(lg) {
+    margin-bottom: 64px;
+  }
+  @include max(md) {
+    margin-bottom: 56px;
+  }
+  @include max(sm) {
+    margin-bottom: 48px;
+  }
+}
+
+@mixin mt-88 {
+  margin-top: 88px;
+}
+
+@mixin mt-140 {
+  margin-top: 140px;
+  @include max(lg) {
+    margin-top: 124px;
+  }
+  @include max(md) {
+    margin-top: 112px;
+  }
+  @include max(sm) {
+    margin-top: 80px;
+  }
+}
+
+@mixin mb-140 {
+  margin-bottom: 140px;
+  @include max(lg) {
+    margin-bottom: 124px;
+  }
+  @include max(md) {
+    margin-bottom: 112px;
+  }
+  @include max(sm) {
+    margin-bottom: 88px;
+  }
+}
+@mixin mr-168 {
+  margin-right: 168px;
+}
+@mixin ml-168 {
+  margin-left: 168px;
+}
+@mixin mt-184 {
+  margin-top: 184px;
+}
+
+@mixin mt-227 {
+  margin-top: 227px;
+}
+
+//padding
+@mixin pr-168 {
+  padding-right: 168px;
+  @include max(lg) {
+    padding-right: 134px;
+  }
+}
+@mixin pt-120 {
+  padding-top: 120px;
+}
+@mixin pt-140 {
+  padding-top: 140px;
+  @include max(lg) {
+    padding-top: 124px;
+  }
+  @include max(md) {
+    padding-top: 112px;
+  }
+}
+
+@mixin pl-168 {
+  padding-left: 168px;
+  @include max(lg) {
+    padding-left: 134px;
+  }
+  @include max(md) {
+    padding-left: 48px;
+  }
+}
+@mixin pb-140 {
+  padding-bottom: 140px;
+}

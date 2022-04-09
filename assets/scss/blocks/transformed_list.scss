@@ -1,0 +1,50 @@
+.list_wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.list_element {
+  position: relative;
+  width: calc(33.33333% - 16px);
+  height: 34.16vw;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 24px;
+  p,
+  h5 {
+    color: white;
+  }
+}
+.foreground_wrapper {
+  overflow: hidden;
+}
+
+.list_element:nth-of-type(3n + 1) {
+  transform: translateY(30px);
+}
+.list_element:nth-of-type(3n) {
+  transform: translateY(50px);
+}
+
+//hover animation
+.visible_part_wrapper {
+  transition: transform 0.5s ease;
+}
+.hidden_part,
+.label_wrapper {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.list_element:hover {
+  .label_wrapper {
+    opacity: 1;
+  }
+  .hidden_part {
+    opacity: 1;
+  }
+}

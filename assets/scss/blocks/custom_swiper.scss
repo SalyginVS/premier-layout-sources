@@ -1,0 +1,105 @@
+.demo-2 {
+  --color-text: #919191;
+  --color-bg: #e4dfdd42;
+  --color-link: #000000;
+  --color-link-hover: #000000;
+  --color-info: #000000;
+  --swiper-height: 65vh;
+
+  .grid {
+    // position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      &.lazyloaded {
+        opacity: 1;
+      }
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 50%;
+    height: 100%;
+    margin-top: 0;
+    top: 0;
+    background-image: none;
+    cursor: none;
+    outline: none;
+    z-index: 1000000;
+    position: absolute;
+    pointer-events: all;
+  }
+
+  .swiper-button-prev {
+    left: 0;
+  }
+
+  .swiper-button-next {
+    right: 0;
+  }
+
+  .arrow-cursor {
+    opacity: 0;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    left: -30px;
+    top: -30px;
+    z-index: 100000;
+    pointer-events: none;
+    transition: visibility 0.3s ease-in-out;
+    &__icon {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+    &__path {
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 1.5px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .demo-2 {
+    .arrow-cursor,
+    .swiper-button-prev,
+    .swiper-button-next {
+      visibility: hidden;
+    }
+  }
+}
+
+@media (max-height: 340px) {
+  .demo-2 {
+    .swiper-slide {
+      width: 50%;
+      min-width: unset;
+    }
+    .image_desktop {
+      display: block;
+      img {
+        object-position: left;
+      }
+    }
+    .image_mobile {
+      display: none;
+    }
+  }
+}

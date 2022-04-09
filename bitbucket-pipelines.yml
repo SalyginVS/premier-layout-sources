@@ -1,0 +1,44 @@
+# This is an example Starter pipeline configuration
+# Use a skeleton to build, test and deploy using manual and parallel steps
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+
+image: node:16.13.2
+
+pipelines:
+  default:
+    - parallel:
+        - step:
+            name: 'Build and Test'
+            script:
+              - echo 'Your testing goes here...'
+
+        - step:
+            name: 'Lint'
+            script:
+              - echo 'Lint goes here....'
+
+    # The following deployment steps will be executed for each pipeline run. To configure your steps and conditionally deploy see https://support.atlassian.com/bitbucket-cloud/docs/configure-bitbucket-pipelinesyml/
+  branches:
+    dev_bug_fixes:
+      - step:
+          name: 'Deployment to Production'
+          deployment: production
+          caches:
+            - node
+          script:
+            - rm -rf bitbucket-pipelines.yml
+            - rm -rf node_modules
+            - pipe: atlassian/sftp-deploy:0.5.7
+              variables:
+                USER: $USER
+                SERVER: $SERVER
+                SSH_KEY: $SSH_KEY
+                PASSWORD: $PASSWORD
+                LOCAL_PATH: '${BITBUCKET_CLONE_DIR}/*'  # '-r ${BITBUCKET_CLONE_DIR}/.'
+                REMOTE_PATH: '/home/admin/public_html/premier-test'
+            - pipe: atlassian/ssh-run:0.4.0
+              variables:
+                SSH_USER: $USER 
+                SERVER: $SERVER
+                COMMAND: 'cd /home/admin/public_html/premier-test && npm run build && pm2 restart premier-test'
